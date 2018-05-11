@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mircrosoft Yahei";
+    /*border: 1px solid black;*/
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*背景色*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-135deg, #51D15B, #42A855);
+    background: -moz-linear-gradient(-135deg, #51D15B, #42A855);
+    background: -webkit-linear-gradient(-135deg, #51D15B, #42A855);
+    background: -o-linear-gradient(-135deg, #51D15B, #42A855);
+}
+
+
+/*最外层*/
+
+.chat-box {
+    width: 80%;
+    max-width: 1000px;
+    min-width: 700px;
+    height: 80%;
+    min-height: 530px;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 1px 1px 15px #333333;
+}
+
+
+/*头部*/
+
+.chat-header {
+    margin: 5px;
+    box-shadow: 1px 1px 15px #7B8C99;
+}
+
+.button-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.log-out {
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: #79C2EA;
+    background: #fff;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/*主体*/
+
+.chat-body {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/*主体左侧*/
+
+.chat-body-left {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+
+/*左侧内容*/
+
+.chat-content {
+    margin-bottom: 5px;
+    height: 100%;
+    box-shadow: 1px 1px 15px #7B8C99;
+    overflow: scroll;
+}
+
+
+/*聊天气泡*/
+
+.my-message-box {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin: 5px;
+}
+
+.log-box {
+    color: rgb(15, 167, 238);
+    border: 0;
+    font-weight: 500;
+    height: 1.5em;
+    line-height: 1.3em;
+    padding: 0 0.5em;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+.other-message-box {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 5px;
+}
+
+.message-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #51D15B;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.other-message-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #79C2EA;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.message-content span {
+    padding: 20px 0px;
+}
+
+.other-message-content span {
+    padding: 20px 0px;
+}
+
+.message-arrow {
+    width: 0px;
+    height: 0px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #51D15B;
+    align-self: center;
+}
+
+.other-message-arrow {
+    width: 0px;
+    height: 0px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #79C2EA transparent transparent;
+    align-self: center;
+}
+
+.user-information {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.other-user-information {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.user-chat-img {
+    width: 50px;
+    height: 50px;
+}
+
+.user-chat-name {
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*聊天输入框*/
+.chat-edit {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 15px #7B8C99;
+    overflow: hidden;
+}
+
+
+
+
+/*聊天输入框输入区域*/
+.edit-box {
+    width: 80%;
+    height: 100%;
+    margin: 5px;
+    border: none;
+    outline: none;
+}
+
+/*聊天框输入按钮*/
+.edit-button {
+    height: 100%;
+    padding: 5px 15px;
+    background: #fff;
+    color: #79C2EA;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*上传文件输入按钮*/
+.file-button {
+    height: 100%;
+    /* padding: 5px 15px; */
+    /* background: #fff; */
+    color: #79C2EA;
+    /* outline: none; */
+    /* border: none; */
+    /* border-radius: 15px; */
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    /* text-align: left; */
+    /* width: 50%; */
+}
+
+.upload-button {
+    height: 100%;
+    /* padding: 5px 15px; */
+    /* background: #fff; */
+    color: #79C2EA;
+    /* outline: none; */
+    /* border: none; */
+    /* border-radius: 15px; */
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    /* text-align: left; */
+    width: 50%;
+}
+
+/*主体右侧*/
+
+.chat-body-right {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    box-shadow: 1px 1px 15px #7B8C99;
+}
+
+
+/*右侧内容*/
+
+.user-name {
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #79C2EA;
+}
+
+.user-img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.online-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #79C2EA;
+}
+
+/*兼容小屏幕*/
+@media screen and (max-width: 420px) {
+    .chat-box {
+        width: 80%;
+        max-width: 1000px;
+        min-width: 700px;
+        height: 80%;
+        min-height: 530px;
+        max-height: 530px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 1px 1px 15px #333333;
+    }
+    .chat-body-left {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 5px;
+    }
+    .chat-body-right {
+        display: none;
+    }
+}
