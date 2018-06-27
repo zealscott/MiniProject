@@ -1,2 +1,2 @@
-# MiniProject
-Mini project that can be done for beginner
+# MyProject
+project that I have done
