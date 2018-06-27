@@ -2,6 +2,18 @@
 
 使用LSTM神经网络，准确率能达到97%，在kaggle上排名前1%。
 
+最终成绩：
+
+![](http://wx1.sinaimg.cn/mw690/0060lm7Tly1fsprl505i9j30vs04kq2y.jpg)
+
+博客地址：
+
+- [基于IMDb数据集的情感分析(TF-IDF与机器学习实现)](http://zealscott.com/posts/26189/)
+
+- [基于IMDb数据集的情感分析（Doc2Vec模型与神经网络实现）](http://zealscott.com/posts/54592/)
+
+
+
 # 数据介绍
 
 - `PreText.py`
